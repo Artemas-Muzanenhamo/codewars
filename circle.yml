@@ -1,0 +1,12 @@
+machine:
+  environment: 
+    _JAVA_OPTIONS: "-Xms512m -Xmx1024m -XX:PermSize=64m -XX:MaxPermSize=256m"
+  java:
+    version: oraclejdk8
+
+dependencies:
+  override:
+    - java -XX:+PrintFlagsFinal -version
+    - mvn --version
+    - mvn clean
+    - mvn test -e
