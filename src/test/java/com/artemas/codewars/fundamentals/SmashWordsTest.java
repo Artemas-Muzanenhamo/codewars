@@ -8,7 +8,7 @@ public class SmashWordsTest {
 
 	@Test
     public void validate() {
-		//assertEquals("Bilal Djaghout", SmashWords.smash(new String[] { "Bilal", "Djaghout" }));
+		assertEquals("Bilal Djaghout", SmashWords.smash(new String[] { "Bilal", "Djaghout" }));
 	}
 	
 	@Test

@@ -9,13 +9,10 @@ public class SmashWords {
 
         String result = null;
 
-        Optional<String[]> optionals = Optional.ofNullable(words);
-        if (optionals.isPresent() && optionals.get().length == 1){
-            result = optionals.get()[0];
-        } else if (optionals.isPresent() && optionals.get().length > 1){
-            //result = optionals.map(x -> Arrays.stream(x));
-        }else if (optionals.get().length == 0){
-            return "";
+        Optional<String[]> strings = Optional.ofNullable(words);
+
+        if (strings.isPresent()){
+            result = String.join(" ", strings.get());
         }
 
         return result;
