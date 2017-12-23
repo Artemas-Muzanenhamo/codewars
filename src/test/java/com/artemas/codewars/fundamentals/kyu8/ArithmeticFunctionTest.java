@@ -1,6 +1,5 @@
 package com.artemas.codewars.fundamentals.kyu8;
 
-import com.artemas.codewars.fundamentals.ArithmeticFunction;
 import org.junit.Assert;
 import org.junit.Test;
 
