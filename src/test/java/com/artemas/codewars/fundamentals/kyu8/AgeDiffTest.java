@@ -4,7 +4,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import org.junit.runners.JUnit4;
 
-public class CalculateAgeTest {
+public class AgeDiffTest {
 
     AgeDiff age = new AgeDiff();
 
