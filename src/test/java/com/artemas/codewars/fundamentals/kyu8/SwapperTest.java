@@ -1,0 +1,17 @@
+package com.artemas.codewars.fundamentals.kyu8;
+
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+import org.junit.runners.JUnit4;
+public class SwapperTest {
+    
+    @Test
+    public void testSomething() {
+        Integer[] args = new Integer[]{1,2}; 
+        
+        Swapper r= new Swapper(args);
+        r.swapValues();
+        assertEquals("Failed swapping numbers",2,r.arguments[0] );
+        assertEquals("Failed swapping numbers",1,r.arguments[1] );
+    }
+}
