@@ -1,5 +1,6 @@
-package com.artemas.codewars.fundamentals.kyu7;
+package com.artemas.codewars.fundamentals.kyu8;
 
+import com.artemas.codewars.fundamentals.kyu8.Cockroach;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 

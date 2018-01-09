@@ -1,4 +1,4 @@
-package com.artemas.codewars.fundamentals.kyu7;
+package com.artemas.codewars.fundamentals.kyu8;
 
 public class Cockroach{
   public int cockroachSpeed(double x){
