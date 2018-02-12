@@ -19,7 +19,7 @@ public class ChristmasListTest {
         for(String s : new String[] {"Jason", "Jordan"}) {
             goodChildren.add(s);
         }
-        assertEquals(goodChildren, FindList.findChildren(santasList, children));
+        assertEquals(goodChildren, ChristmasList.findChildren(santasList, children));
     }
     
     @Test
@@ -35,7 +35,7 @@ public class ChristmasListTest {
         for(String s : new String[] {"JJ", "Jason"}) {
             goodChildren.add(s);
         }
-        assertEquals(goodChildren, FindList.findChildren(santasList, children));
+        assertEquals(goodChildren, ChristmasList.findChildren(santasList, children));
     }
     
     @Test
@@ -51,6 +51,6 @@ public class ChristmasListTest {
         for(String s : new String[] {"JAsoN", "jASon"}) {
             goodChildren.add(s);
         }
-        assertEquals(goodChildren, FindList.findChildren(santasList, children));
+        assertEquals(goodChildren, ChristmasList.findChildren(santasList, children));
     }
 }
