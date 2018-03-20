@@ -6,7 +6,9 @@ public class Representation {
     public static int daysRepresented(int[][] trips) {
         int value = Arrays.stream(trips)
                 .flatMapToInt(array -> Arrays.stream(array))
-                .reduce(0, (a, b) -> ((365 - a) - (365 - b)));
+                .reduce(0, (a, b) -> (b - a));
+
+        value += trips.length;
 
         return value;
     }
