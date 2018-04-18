@@ -7,7 +7,7 @@ import java.util.*;
 
 import static org.junit.Assert.assertEquals;
 
-public class AggregationKata3Test3 {
+public class AggregationKata4Test {
 
     private Student[] students;
 
@@ -22,21 +22,25 @@ public class AggregationKata3Test3 {
         Student jane = new Student("Jane", 65, "CS", Student.Gender.FEMALE);
 
         students = new Student[]{galina, anton, jack, mike, jane};
-        
+
     }
 
     @Test
-    public void basicTestGetStudentNamesByDepartment() throws Exception {
+    public void basicTestGetTheNumberOfStudentsByGenderForEachDepartment() throws Exception {
 
-        Map<String, List<String>> actual = AggregationKata3.getStudentNamesByDepartment(Arrays.stream(students));
-        List<String> list1 = new ArrayList<>(Arrays.asList("Galina", "Jack", "Mike"));
-        List<String> list2 = new ArrayList<>(Arrays.asList("Anton", "Jane"));
-        Map<String, List<String>> expected = new HashMap<>();
-        expected.put("Philology", list1);
-        expected.put("CS", list2);
+        Map<String, Map<Student.Gender, Long>> actual = AggregationKata4.getTheNumberOfStudentsByGenderForEachDepartment(Arrays.stream(students));
+        Map<String, Map<Student.Gender, Long>> expected = new HashMap<>();
+        Map<Student.Gender, Long> map1 = new HashMap<>();
+        Map<Student.Gender, Long> map2 = new HashMap<>();
+        map1.put(Student.Gender.MALE, 1L);
+        map1.put(Student.Gender.FEMALE, 1L);
+        map2.put(Student.Gender.MALE, 2L);
+        map2.put(Student.Gender.FEMALE, 1L);
+        expected.put("CS", map1);
+        expected.put("Philology", map2);
 
         assertEquals(expected, actual);
 
     }
-    
+
 }
