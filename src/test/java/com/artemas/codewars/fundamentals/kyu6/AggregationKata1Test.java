@@ -7,7 +7,7 @@ import java.util.*;
 
 import static org.junit.Assert.assertEquals;
 
-public class AggregationKataTest1 {
+public class AggregationKata1Test {
 
     private Student[] students;
 
