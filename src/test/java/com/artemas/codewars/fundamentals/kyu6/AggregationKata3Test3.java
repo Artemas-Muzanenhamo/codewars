@@ -4,12 +4,10 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 import static org.junit.Assert.assertEquals;
 
-public class AggregationKataTest3 {
+public class AggregationKata3Test3 {
 
     private Student[] students;
 
@@ -30,7 +28,7 @@ public class AggregationKataTest3 {
     @Test
     public void basicTestGetStudentNamesByDepartment() throws Exception {
 
-        Map<String, List<String>> actual = AggregationKata.getStudentNamesByDepartment(Arrays.stream(students));
+        Map<String, List<String>> actual = AggregationKata3.getStudentNamesByDepartment(Arrays.stream(students));
         List<String> list1 = new ArrayList<>(Arrays.asList("Galina", "Jack", "Mike"));
         List<String> list2 = new ArrayList<>(Arrays.asList("Anton", "Jane"));
         Map<String, List<String>> expected = new HashMap<>();
