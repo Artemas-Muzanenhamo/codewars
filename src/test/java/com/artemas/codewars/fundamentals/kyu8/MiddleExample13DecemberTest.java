@@ -9,7 +9,7 @@ import java.util.*;
 
 import static org.junit.Assert.assertEquals;
 
-public class Kata13DecemberTest {
+public class MiddleExample13DecemberTest {
     @Test
     public void firstTest() throws Exception {
         List<Integer> listOfNumbers = new LinkedList<>(Arrays.asList(1, 2, 2, 2, 4, 3, 4, 5, 6, 7));
