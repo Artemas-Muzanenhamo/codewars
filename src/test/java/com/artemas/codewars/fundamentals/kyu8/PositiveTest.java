@@ -3,7 +3,7 @@ package com.artemas.codewars.fundamentals.kyu8;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
-public class SolutionTest {
+public class PositiveTest {
     @Test
     public void testSomething() {
         assertEquals(15, Positive.sum(new int[]{1,2,3,4,5}));
