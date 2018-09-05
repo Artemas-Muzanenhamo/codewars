@@ -1,11 +1,12 @@
 package com.artemas.codewars.fundamentals.kyu8;
 
 import java.util.Arrays;
-import java.util.Collections;
+
+import static java.util.Collections.swap;
 
 public class WrongEndHead {
   public static String[] fixTheMeerkat(String[] arr) {
-    Collections.swap(Arrays.asList(arr) , 0 , 2);
+    swap(Arrays.asList(arr) , 0 , 2);
     return arr;
   }
 }
