@@ -20,8 +20,3 @@ dependencies {
     compile group: 'org.projectlombok', name: 'lombok', version: '1.16.14'
     compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.4'
 }
-
-dependencies {
-    runtime group: 'org.projectlombok', name: 'lombok', version: '1.16.14'
-    runtime group: 'org.apache.commons', name: 'commons-lang3', version: '3.4'
-}
