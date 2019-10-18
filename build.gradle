@@ -17,6 +17,14 @@ repositories {
 }
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    testRuntime('org.junit.jupiter:junit-jupiter-api:5.3.2')
+    testCompile('org.junit.jupiter:junit-jupiter-params:5.3.2')
+    testRuntime('org.junit.jupiter:junit-jupiter-engine:5.3.2')
+    testImplementation('org.assertj:assertj-core:3.11.1')
     compile group: 'org.projectlombok', name: 'lombok', version: '1.16.14'
     compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.4'
+}
+
+test {
+    useJUnitPlatform()
 }
