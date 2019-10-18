@@ -12,6 +12,7 @@ class DegreeTest {
     private static final String NAME = "artemas";
     private static final String SURNAME = "muza";
     private static final Degree DEGREE = new Degree("computer science");
+    private static final String DEGREE_HERE = "no degree here!";
     private University university;
 
     @BeforeEach
@@ -40,8 +41,20 @@ class DegreeTest {
         String degree = university.getDegree(null);
         String degree2 = university.getDegreeViaOptional(null);
 
-        assertEquals(degree, "no degree here!");
+        assertEquals(degree, DEGREE_HERE);
 
-        assertEquals(degree2, "no degree here!");
+        assertEquals(degree2, DEGREE_HERE);
+    }
+
+    @Test
+    @DisplayName("Should return NO DEGREE HERE when a valid student has a null degree")
+    void handleNullDegree() {
+        Student student = new Student(NAME, SURNAME, null);
+
+        String degree = university.getDegree(student);
+        String degree2 = university.getDegreeViaOptional(student);
+
+        assertEquals(degree, DEGREE_HERE);
+        assertEquals(degree2, DEGREE_HERE);
     }
 }

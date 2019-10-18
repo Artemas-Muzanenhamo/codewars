@@ -5,11 +5,11 @@ public class Degree {
 
     public Degree() { }
 
-    public Degree(String degree) {
+    Degree(String degree) {
         this.degree = degree;
     }
 
-    public String getDegree() {
+    String getDegree() {
         return degree;
     }
 }
