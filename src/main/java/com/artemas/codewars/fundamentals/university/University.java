@@ -1,7 +1,9 @@
 package com.artemas.codewars.fundamentals.university;
 
+import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 class University {
@@ -24,5 +26,12 @@ class University {
                 .map(Student::getDegree)
                 .map(Degree::getDegree)
                 .orElse(OTHER);
+    }
+
+    List<Student> getComputerScienceStudents(List<Student> students) {
+        return students
+                .stream()
+                .filter(student -> "computer science".equals(student.getDegree().getDegree()))
+                .collect(Collectors.toList());
     }
 }
