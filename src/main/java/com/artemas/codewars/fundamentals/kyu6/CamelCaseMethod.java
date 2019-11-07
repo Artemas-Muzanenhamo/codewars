@@ -2,13 +2,13 @@ package com.artemas.codewars.fundamentals.kyu6;
 
 import org.apache.commons.lang3.text.WordUtils;
 
-public class CamelCaseMethod {
+class CamelCaseMethod {
 
-    public static String camelCase(String str) {
+    static String camelCase(String str) {
         if (!str.isEmpty()){
             str = str.trim();
             str = str.trim().replaceAll(" +", " ");
-            str = WordUtils.capitalizeFully(str, new char[]{' '}).replaceAll(" ", "");
+            str = WordUtils.capitalizeFully(str, ' ').replaceAll(" ", "");
             return str;
         } else {
             return str;
