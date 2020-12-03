@@ -11,8 +11,6 @@ targetCompatibility = 1.11
 
 
 repositories {
-
-    maven { url "http://repo.maven.apache.org/maven2" }
     mavenCentral()
 }
 dependencies {
@@ -22,6 +20,7 @@ dependencies {
     testRuntime('org.junit.jupiter:junit-jupiter-engine:5.3.2')
     testImplementation('org.assertj:assertj-core:3.11.1')
     implementation 'org.projectlombok:lombok:1.18.10'
+    annotationProcessor 'org.projectlombok:lombok:1.18.10'
     compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.4'
 }
 
