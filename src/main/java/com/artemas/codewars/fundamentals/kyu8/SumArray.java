@@ -1,10 +1,10 @@
 package com.artemas.codewars.fundamentals.kyu8;
 
-import java.util.Arrays;
+import java.util.stream.DoubleStream;
 
 public class SumArray {
 
   public static double sum(double[] numbers) {
-    return Arrays.stream(numbers).sum();
+    return DoubleStream.of(numbers).sum();
   }
 }
