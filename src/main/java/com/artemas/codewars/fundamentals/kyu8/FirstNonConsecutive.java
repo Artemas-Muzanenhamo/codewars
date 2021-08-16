@@ -1,8 +1,5 @@
 package com.artemas.codewars.fundamentals.kyu8;
 
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
-
 class FirstNonConsecutive {
     static Integer find(final int[] array) {
         if (array.length == 0 || array.length == 1) {
