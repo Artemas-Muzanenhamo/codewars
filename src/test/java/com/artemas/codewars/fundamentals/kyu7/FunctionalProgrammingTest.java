@@ -1,8 +1,8 @@
 package com.artemas.codewars.fundamentals.kyu7;
 
-import org.junit.Test;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+import org.junit.jupiter.api.Test;
+
+import static org.testng.AssertJUnit.assertTrue;
 
 public class FunctionalProgrammingTest {
   @Test

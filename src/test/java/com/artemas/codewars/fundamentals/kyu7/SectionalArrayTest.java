@@ -1,8 +1,9 @@
 package com.artemas.codewars.fundamentals.kyu7;
 
 import java.util.Arrays;
-import org.junit.Test;
-import static org.junit.Assert.assertArrayEquals;
+import org.junit.jupiter.api.Test;
+
+import static org.testng.internal.junit.ArrayAsserts.assertArrayEquals;
 
 public final class SectionalArrayTest {
     private static void test(final int[] expected, final int[] input, final int start, final int... length) {

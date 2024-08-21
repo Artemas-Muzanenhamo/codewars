@@ -1,9 +1,8 @@
 package com.artemas.codewars.fundamentals.kyu7;
 
-import static org.junit.Assert.assertEquals;
+import org.junit.jupiter.api.Test;
 
-import org.junit.Test;
-import org.junit.Ignore;
+import static org.testng.AssertJUnit.assertEquals;
 
 public class TestSmallestValueInArray {
 

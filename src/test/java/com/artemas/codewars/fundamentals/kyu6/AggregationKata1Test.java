@@ -1,17 +1,17 @@
 package com.artemas.codewars.fundamentals.kyu6;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.*;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AggregationKata1Test {
 
     private Student[] students;
 
-    @Before
+    @BeforeEach
     public void setUp() {
 
         //Generate a basic array of students:

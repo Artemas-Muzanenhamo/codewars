@@ -1,9 +1,9 @@
 package com.artemas.codewars.fundamentals.kyu6;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static com.artemas.codewars.fundamentals.kyu6.SuperMarket.solveSuperMarketQueue;
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SuperMarketTest {
 	@Test

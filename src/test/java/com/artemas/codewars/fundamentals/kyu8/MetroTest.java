@@ -2,10 +2,9 @@ package com.artemas.codewars.fundamentals.kyu8;
 
 import java.util.ArrayList;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertEquals;
-import org.junit.runners.JUnit4;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class MetroTest {

@@ -1,7 +1,8 @@
 package com.artemas.codewars.fundamentals.kyu8;
 
-import org.junit.Test;
-import static org.junit.Assert.assertEquals;
+import org.junit.jupiter.api.Test;
+
+import static org.testng.AssertJUnit.assertEquals;
 
 public class ExampleTest {
   @Test
