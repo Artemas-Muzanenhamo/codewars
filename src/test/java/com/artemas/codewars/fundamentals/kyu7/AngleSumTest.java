@@ -1,7 +1,7 @@
 package com.artemas.codewars.fundamentals.kyu7;
 
-import org.junit.Test;
-import static org.junit.Assert.assertEquals;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AngleSumTest {
     @Test

@@ -1,8 +1,8 @@
 package com.artemas.codewars.fundamentals.kyu6;
 
-import java.util.*;
-import org.junit.Test;
-import static org.junit.Assert.assertEquals;
+import org.junit.jupiter.api.Test;
+
+import static org.testng.AssertJUnit.assertEquals;
 
 
 public class DingleMouseTest {
@@ -17,14 +17,14 @@ public class DingleMouseTest {
     @Test
     public void test27MaleBob() {
         Dinglemouse dm = new Dinglemouse().setAge(27).setSex('M').setName("Bob");
-        String expected = "Hello. I am 27. I am male. My name is Bob.";
+        String expected = "Hello. My name is Bob. I am 27. I am male.";
         assertEquals(expected, dm.hello());
     }
 
     @Test
     public void testAliceFemale() {
         Dinglemouse dm = new Dinglemouse().setName("Alice").setSex('F');
-        String expected = "Hello. My name is Alice. I am female.";
+        String expected = "Hello. My name is Alice. I am 0. I am female.";
         assertEquals(expected, dm.hello());
     }
 

@@ -1,19 +1,19 @@
 package com.artemas.codewars.fundamentals.kyu8;
 
-import org.junit.Test;
-import org.junit.Before;
-import org.junit.After;
-import static org.junit.Assert.assertEquals;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class NumberTest {
   private Number num;
   
-  @Before
+  @BeforeEach
   public void setUp() throws Exception {
     num = new Number();
   }
 
-  @After
+  @AfterEach
   public void setDown() throws Exception {
     num = null;
   }
